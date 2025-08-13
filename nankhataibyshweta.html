@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nankhatai by Shweta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+
+.scrolling-background {
+  display: flex;
+  animation: scrollLeft 30s linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.scrolling-background img {
+  height: 100vh;
+  object-fit: cover;
+  flex-shrink: 0;
+  width: auto; /* Let image keep its natural width */
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+    header {
+      background-color: #b39ddb;
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .logo {
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hero img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.02);
+    }
+
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cookies img {
+      width: 220px;
+      margin: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .cookies img:hover {
+      transform: scale(1.05);
+    }
+
+    .reviews {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      padding: 2rem;
+      border-radius: 15px;
+      margin: 2rem auto;
+      max-width: 800px;
+      color: #333;
+      font-weight: 500
+    }
+
+    .review {
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .contact {
+      background: #fffacd;
+      padding: 2rem;
+      border-top: 3px solid #ffb6c1;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      color: #d2691e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #b39ddb;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .cookies img {
+        width: 100%;
+      }
+
+      .logo {
+        max-width: 80px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scrolling-background">
+    <img src="cockies_bg.jpg" alt="Cookies background">
+    <img src="package_1.jpg" alt="Package 1">
+    <img src="cockies_bg_1.jpg" alt="Cookies background 1">
+    <img src="package_2.jpg" alt="Package 2">
+    <img src="cockies_bg_2.jpg" alt="Cookies background 2">
+
+    <!-- Duplicate set for seamless loop -->
+    <img src="cockies_bg.jpg" alt="Cookies background">
+    <img src="package_1.jpg" alt="Package 1">
+    <img src="cockies_bg_1.jpg" alt="Cookies background 1">
+    <img src="package_2.jpg" alt="Package 2">
+    <img src="cockies_bg_2.jpg" alt="Cookies background 2">
+  </div>
+
+  <header>
+    <img src="ns_logo.jpg" alt="Nankhatai Logo" class="logo">
+    <h1>Nankhatai by Shweta</h1>
+    <p>Melt in mouth magic, purely made with ghee</p>
+  </header>
+
+  <section class="section reviews">
+    <h2>💬 Customer Reviews</h2>
+    <div class="review">
+      <strong>Priya S.</strong>: "Absolutely loved the melt-in-mouth texture. Perfect with chai!"
+    </div>
+    <div class="review">
+      <strong>Ravi M.</strong>: "Best nankatai I've had in years. Highly recommend!"
+    </div>
+    <div class="review">
+      <strong>Neha T.</strong>: "Fresh, flavorful, and beautifully packed. Great gift idea too!"
+    </div>
+  </section>
+
+ <section class="section contact">
+  <h2>📞 Contact Us</h2>
+  <p>Email: <a href="mailto:nankhataibyshweta@gmail.com">nankhataibyshweta@gmail.com</a></p>
+  <p>Phone: +91-9876543210</p>
+  <p><img src="insta_logo.jpg" alt="Instagram" style="height: 20px; vertical-align: middle; margin-right: 8px;">
+  <a href="https://www.instagram.com/foodess_tashwe?utm_source=share_sheet&amp;igsh=Y2JmOTAy">foodess_tashwe</a></p>
+
+</section>
+
+<footer>
+  &copy; 2025 Nankhatai by Shweta. All rights reserved.
+</footer>
+
+</body>
+</html>
