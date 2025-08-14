@@ -11,24 +11,24 @@
       color: #333;
     }
 
-.scrolling-background {
-  display: flex;
-  animation: scrollLeft 30s linear infinite;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: -1;
-}
+    .scrolling-background {
+      display: flex;
+      animation: scrollLeft 30s linear infinite;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      z-index: -1;
+    }
 
-.scrolling-background img {
-  height: 100vh;
-  object-fit: cover;
-  flex-shrink: 0;
-  width: auto; /* Let image keep its natural width */
-}
+    .scrolling-background img {
+      height: 100vh;
+      object-fit: cover;
+      flex-shrink: 0;
+      width: auto;
+    }
 
-@keyframes scrollLeft {
+ @keyframes scrollLeft {
   0% {
     transform: translateX(0);
   }
@@ -37,25 +37,34 @@
   }
 }
 
+
     header {
-      background-color: #b39ddb;
-      padding: 1rem;
+      background-color: #ffffff;
+      padding: 0.3rem;
       text-align: center;
-      color: #fff;
-    }
+      color: #333;
+        }
 
     .logo {
       max-width: 120px;
       height: auto;
       display: block;
       margin: 0 auto 1rem auto;
+      margin-bottom: 0.3rem;
     }
 
-    header h1 {
-      font-size: 2.2rem;
-      font-weight: bold;
-      font-family: 'Segoe UI', sans-serif;
-    }
+header h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  margin-top: 0;
+}
+
 
     .hero {
       text-align: center;
@@ -91,15 +100,19 @@
       transform: scale(1.05);
     }
 
-    .reviews {
-      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-      padding: 2rem;
-      border-radius: 15px;
-      margin: 2rem auto;
-      max-width: 800px;
-      color: #333;
-      font-weight: 500
-    }
+.reviews {
+  background: rgba(66, 19, 91, 0.5); /* semi-transparent white */
+  backdrop-filter: blur(20px); /* blur the background behind */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 600px;
+  color: #FFF61F;
+  font-weight: 500;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* optional soft shadow */
+}
+
 
     .review {
       margin-bottom: 1.5rem;
@@ -107,11 +120,10 @@
     }
 
     .contact {
-      background: #fffacd;
-      padding: 2rem;
-      border-top: 3px solid #ffb6c1;
-      border-radius: 10px;
-    }
+      background: #ffffff;
+      padding: 0.5rem;
+
+     }
 
     .contact a {
       color: #d2691e;
@@ -121,8 +133,8 @@
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #b39ddb;
+      padding: 0.5rem;
+      background-color: #46145D;
       color: #fff;
     }
 
@@ -158,7 +170,7 @@
   </div>
 
   <header>
-    <img src="ns_logo.jpg" alt="Nankhatai Logo" class="logo">
+    <img src="logo_2.jpg" alt="Nankhatai Logo" class="logo">
     <h1>Nankhatai by Shweta</h1>
     <p>Melt in mouth magic, purely made with ghee</p>
   </header>
@@ -176,15 +188,14 @@
     </div>
   </section>
 
- <section class="section contact">
-  <h2>📞 Contact Us</h2>
-  <p>Email: <a href="mailto:nankhataibyshweta@gmail.com">nankhataibyshweta@gmail.com</a></p>
-  <p>Phone: +91-9890156217</p>
-</section>
+  <section class="section contact">
+    <h2>📞 Contact Us</h2>
+    <p>Email: <a href="mailto:nankhataibyshweta@gmail.com">nankhataibyshweta@gmail.com</a></p>
+    <p>Phone: +91-9890156217</p>
+  </section>
 
-<footer>
-  &copy; 2025 Nankhatai by Shweta. All rights reserved.
-</footer>
-
+  <footer>
+    &copy; 2025 Nankhatai by Shweta. All rights reserved.
+  </footer>
 </body>
 </html>
